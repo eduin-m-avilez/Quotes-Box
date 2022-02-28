@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.card{
+  background: rgba(245, 245, 245, 0.788);
+  padding: 1rem;
+  width: 60%;
+  height: auto;
+  border-radius: 2rem .5rem 2rem .5rem;
+  box-shadow: 2px 8px 8px rgb(73, 1, 1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.phases{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phases i{
+  padding-right: .9rem;
+  font-size: 5rem;
+}
+
+.phases .text{
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+}
+
+.card .right{
+  display: block;
+  text-align: right;
+
+  width: 100%;
+}
+
+.card .author{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding-right: 2rem;
+  margin-bottom: 0;
+}
+
+.card button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-style: none;
+  margin-right: 10%;
+  margin-top: 5px;
+  box-shadow: 5px 4px 10px #000;
+}
+
+.card button i{
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 60%;
+    height: auto;
   }
 }
